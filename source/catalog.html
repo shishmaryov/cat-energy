@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="catalog-page" lang="en">
+<html class="catalog-page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 </head>
 
 <body class="catalog-page__body">
-  <header class="catalog-page__header">
+  <header class="header catalog-page__header">
     <div class="wrapper">
       <div class="logo header__logo">
         <img src="" alt="" class="logo-img">
@@ -32,9 +32,9 @@
     </div>
 
   </header>
-  <main class="catalog-page__main">
+  <main class="main catalog-page__main">
     <div class="wrapper catalog__main-wrapper">
-      <h1 class="title main__title">Каталог продукции</h1>
+      <h1 class="title catalog-main__title">Каталог продукции</h1>
       <section class="products">
         <div class="product">
           <img src="" alt="" class="product__img">
@@ -306,6 +306,36 @@
       </a>
     </div>
   </footer>
+  <section class="modal">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <button class="modal__close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+      <ul class="modal__sent">
+        <li class="modal__name">
+          <label class="modal__label" for="user-fullname">Ваше имя:</label>
+          <input class="modal__input" type="text" name="fullname" id="user-fullname" placeholder="Имя Фамилия"
+            pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
+        </li>
+        <li class="modal__email">
+          <label class="modal__label" for="user-email">Ваш e-mail:</label>
+          <input class="modal__input" type="email" name="email" id="user-email" placeholder="email@example.com"
+            required>
+        </li>
+        <li class="modal__message">
+          <label class="modal__label" for="user-message">Перечень товаров и их количество для заказа:</label>
+          <textarea class="modal__textarea" name="message" id="user-message" placeholder="В свободной форме" cols="30"
+            rows="6" required></textarea>
+        </li>
+        <li class="modal__sent">
+          <button class="modal__button button button--green" type="submit">
+            <span>Отправить</span>
+          </button>
+        </li>
+      </ul>
+    </form>
+  </section>
 </body>
 
 </html>
