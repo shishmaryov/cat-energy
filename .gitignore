@@ -10,10 +10,6 @@
 
 *.psd
 
-*.docx
-
-*.fig
-
 *.sublime*
 
 node_modules/
