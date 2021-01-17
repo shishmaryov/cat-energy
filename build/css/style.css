@@ -383,8 +383,25 @@ th {
   src: url("../fonts/Arial-Regular.ttf") format(truetype);
   font-weight: 400; }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
 .title {
-  font-family: "Oswald"; }
+  font-family: "Oswald";
+  color: #000000; }
 
 .text {
   font-family: "Arial"; }
+
+.button {
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #68B738;
+  text-transform: uppercase;
+  text-decoration: none; }

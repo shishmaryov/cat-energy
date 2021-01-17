@@ -1,6 +1,26 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.wrapper {
+
+}
 .title {
   font-family: "Oswald";
+  color: $black;
 }
 .text {
   font-family: "Arial";
+}
+.button {
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 18px;
+  color:$white;
+  background-color: $basic_green;
+  text-transform: uppercase;
+  text-decoration: none;
 }
