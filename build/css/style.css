@@ -390,6 +390,9 @@ th {
   height: 1px;
   margin: -1px; }
 
+.wrapper {
+  max-width: 1500px; }
+
 .title {
   font-family: "Oswald";
   color: #000000; }
@@ -405,3 +408,16 @@ th {
   background-color: #68B738;
   text-transform: uppercase;
   text-decoration: none; }
+
+.promo {
+  /*
+  &__img {} &__button {}
+  */ }
+  .promo__title {
+    font-size: 36px;
+    line-height: 36px; }
+  .promo__text {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400; }
