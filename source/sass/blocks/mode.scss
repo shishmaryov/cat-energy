@@ -1,0 +1,25 @@
+.mode {
+
+  &__title {
+  font-size: 24px;
+  line-height: 37px;
+  @include Oswald-Regular;
+  text-transform: uppercase;
+  color: $black;
+  }
+
+  &__text {
+  font-size: 14px;
+  line-height: 18px;
+  @include Arial-Regular;
+  color: $special-dark-grey;
+  }
+
+  &__link {
+  font-size: 16px;
+  @include Oswald-Regular;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
+  }
+}

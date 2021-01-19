@@ -411,8 +411,8 @@ th {
 
 .promo {
   /*
-  &__img {} &__button {}
-  */ }
+  &__img {
+*/ }
   .promo__title {
     font-size: 36px;
     line-height: 36px; }
@@ -420,4 +420,85 @@ th {
     font-size: 14px;
     line-height: 14px;
     font-family: "Oswald", sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    text-transform: uppercase; }
+  .promo__button {
+    padding: 11px 73px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #ffffff; }
+
+.mode__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000; }
+
+.mode__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  color: #444444; }
+
+.mode__link {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000; }
+
+.modes__list {
+  list-style: none; }
+
+.modes__item {
+  background-color: #F2F2F2; }
+
+.special {
+  /*  &__item {
+
+  }
+
+  &__img {
+
+  }
+*/ }
+  .special__title {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #000000; }
+  .special__list {
+    list-style-type: none; }
+  .special__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444; }
+
+.example {
+  background-color: #F2F2F2; }
+  .example__title {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #000000; }
+  .example__text {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    color: #444444; }
+  .example__result {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000; }

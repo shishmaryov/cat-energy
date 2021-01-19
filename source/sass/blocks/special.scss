@@ -1,0 +1,28 @@
+.special {
+
+  &__title {
+    font-size: 36px;
+    line-height: 40px;
+    @include Oswald-Regular;
+    color: $black;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+/*  &__item {
+
+  }
+
+  &__img {
+
+  }
+*/
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    color:$special-dark-grey;
+  }
+
+}
