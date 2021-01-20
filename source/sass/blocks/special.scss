@@ -3,7 +3,7 @@
   &__title {
     font-size: 36px;
     line-height: 40px;
-    @include Oswald-Regular;
+    font-family: "Oswald", sans-serif;
     color: $black;
   }
 

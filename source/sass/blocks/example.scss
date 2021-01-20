@@ -3,24 +3,24 @@
   &__title {
     font-size: 36px;
     line-height: 40px;
-    @include Oswald-Regular;
+    font-family: "Oswald", sans-serif;
     color: $black;
   }
 
   &__text {
     font-size: 14px;
     line-height: 18px;
-    @include Arial-Regular;
     color: $special-dark-grey;
+    @include Arial-Regular;
 
   }
 
   &__result {
     font-size: 14px;
     line-height: 20px;
-    @include Oswald-Regular;
-    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
     color: $black;
+    text-transform: uppercase;
 
   }
 }

@@ -3,23 +3,23 @@
   &__title {
   font-size: 24px;
   line-height: 37px;
-  @include Oswald-Regular;
-  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
   color: $black;
+  text-transform: uppercase;
   }
 
   &__text {
   font-size: 14px;
   line-height: 18px;
-  @include Arial-Regular;
   color: $special-dark-grey;
+  @include Arial-Regular;
   }
 
   &__link {
   font-size: 16px;
-  @include Oswald-Regular;
+  font-family: "Oswald", sans-serif;
+  color: $black;
   text-transform: uppercase;
   text-decoration: none;
-  color: $black;
   }
 }
