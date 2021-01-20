@@ -525,3 +525,11 @@ th {
     font-size: 14px;
     line-height: 20px;
     color: #444444; }
+
+.author__link {
+  text-decoration: none; }
+
+.author__text {
+  font-weight: 400;
+  font-family: "Arial", sans-serif;
+  color: #444444; }
