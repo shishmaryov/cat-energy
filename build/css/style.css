@@ -373,15 +373,22 @@ th {
   padding: 0; }
 
 @font-face {
-  font-family: "Oswald";
-  src: url("../fonts/Oswald-Regular.ttf") format(truetype);
   font-weight: 400;
-  font-style: normal; }
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  src: url("../fonts/Oswald-Regular.ttf") format(truetype); }
 
 @font-face {
-  font-family: "Arial";
-  src: url("../fonts/Arial-Regular.ttf") format(truetype);
-  font-weight: 400; }
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  src: url("../fonts/Oswald-Medium.ttf") format(truetype); }
+
+@font-face {
+  font-weight: 400;
+  font-family: "Arial" , sans-serif;
+  font-style: normal;
+  src: url("../fonts/Arial-Regular.ttf") format(truetype); }
 
 .visually-hidden {
   position: absolute;
@@ -409,6 +416,29 @@ th {
   text-transform: uppercase;
   text-decoration: none; }
 
+.logo__link {
+  text-decoration: none; }
+
+.site-nav__list {
+  list-style-type: none; }
+
+.site-nav__item {
+  padding: 23px 0;
+  border-bottom: 1px solid #EBEBEB; }
+
+.site-nav__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Oswald";
+  color: #000000;
+  text-decoration: none; }
+
+.main-wrapper {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto; }
+
 .promo {
   /*
   &__img {
@@ -417,21 +447,24 @@ th {
     font-size: 36px;
     line-height: 36px; }
   .promo__text {
+    font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     text-transform: uppercase; }
   .promo__button {
     padding: 11px 73px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     color: #ffffff; }
 
 .mode__title {
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   color: #000000;
   text-transform: uppercase; }
 
@@ -443,8 +476,9 @@ th {
   font-weight: 400; }
 
 .mode__link {
+  font-weight: 400;
   font-size: 16px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   color: #000000;
   text-transform: uppercase;
   text-decoration: none; }
@@ -465,13 +499,15 @@ th {
   }
 */ }
   .special__title {
+    font-weight: 400;
     font-size: 36px;
     line-height: 40px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     color: #000000; }
   .special__list {
     list-style-type: none; }
   .special__text {
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #444444; }
@@ -479,9 +515,10 @@ th {
 .example {
   background-color: #F2F2F2; }
   .example__title {
+    font-weight: 400;
     font-size: 36px;
     line-height: 40px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     color: #000000; }
   .example__text {
     font-size: 14px;
@@ -490,11 +527,26 @@ th {
     font-family: "Arial", sans-serif;
     font-weight: 400; }
   .example__result {
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     color: #000000;
     text-transform: uppercase; }
+
+.module__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald";
+  color: #000000; }
+
+.module__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial";
+  color: #444444; }
 
 /* .footer {
 
@@ -516,9 +568,10 @@ th {
 }
 */
 .contact__title {
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   color: #000000;
   text-transform: uppercase; }
   .contact__title__text {
@@ -531,5 +584,5 @@ th {
 
 .author__text {
   font-weight: 400;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial";
   color: #444444; }

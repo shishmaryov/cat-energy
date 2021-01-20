@@ -6,9 +6,10 @@
   }
 
   &__text {
+    font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     text-transform: uppercase;
   }
   /*
@@ -17,9 +18,10 @@
 
   &__button {
     padding: 11px 73px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     color:$white;
   }
 }

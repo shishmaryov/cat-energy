@@ -1,9 +1,10 @@
 .example {
   background-color: $basic-grey;
   &__title {
+    font-weight: 400;
     font-size: 36px;
     line-height: 40px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     color: $black;
   }
 
@@ -16,9 +17,10 @@
   }
 
   &__result {
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     color: $black;
     text-transform: uppercase;
 

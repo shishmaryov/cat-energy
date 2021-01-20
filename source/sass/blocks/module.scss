@@ -1,0 +1,18 @@
+.module {
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: "Oswald";
+    color: $black;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: "Arial";
+    color: $special-dark-grey;
+  }
+}
