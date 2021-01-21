@@ -439,26 +439,30 @@ th {
   margin-right: auto;
   margin-left: auto; }
 
-.promo {
-  /*
-  &__img {
-*/ }
-  .promo__title {
-    font-size: 36px;
-    line-height: 36px; }
-  .promo__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    font-family: "Oswald";
-    text-transform: uppercase; }
-  .promo__button {
-    padding: 11px 73px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    font-family: "Oswald";
-    color: #ffffff; }
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff; }
+
+.promo__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Oswald";
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.promo__background {
+  background-color: #68B738;
+  background-image: url("../../img/index-background-mobile@2x.webp"); }
+
+.promo__button {
+  padding: 11px 73px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald";
+  color: #ffffff; }
 
 .mode__title {
   font-weight: 400;
@@ -476,41 +480,59 @@ th {
   font-weight: 400; }
 
 .mode__link {
+  position: relative;
   font-weight: 400;
   font-size: 16px;
   font-family: "Oswald";
   color: #000000;
   text-transform: uppercase;
   text-decoration: none; }
+  .mode__link:after {
+    content: url("../img/icon-right-arrow-long.svg");
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 24px;
+    height: 12px; }
 
 .modes__list {
+  padding-left: 0;
   list-style: none; }
 
 .modes__item {
   background-color: #F2F2F2; }
 
-.special {
-  /*  &__item {
+.special__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Oswald";
+  color: #000000; }
 
-  }
+.special__list {
+  padding-left: 0px;
+  list-style-type: none; }
 
-  &__img {
+.special__svg {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #68B738; }
+  .special__svg--leaf {
+    padding: 14px 15px; }
+  .special__svg--tub {
+    padding: 13px 16px 16px 15px; }
+  .special__svg--fork {
+    padding: 15px 17px 15px 18px; }
+  .special__svg--alarm {
+    padding: 13px 14px 14px 14px; }
 
-  }
-*/ }
-  .special__title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
-    font-family: "Oswald";
-    color: #000000; }
-  .special__list {
-    list-style-type: none; }
-  .special__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #444444; }
+.special__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444; }
 
 .example {
   background-color: #F2F2F2; }
@@ -533,6 +555,16 @@ th {
     font-family: "Oswald";
     color: #000000;
     text-transform: uppercase; }
+
+.slider__toggle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald";
+  color: #000000;
+  text-transform: uppercase;
+  background-color: none;
+  border: none; }
 
 .module__title {
   font-weight: 400;
