@@ -15,8 +15,11 @@
   color: $special-dark-grey;
   @include Arial-Regular;
   }
+  &__img {
+  }
   &__svg {
-
+    &:before {
+    }
   }
 
   &__link {

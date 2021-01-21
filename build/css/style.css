@@ -436,8 +436,11 @@ th {
 
 .main-wrapper {
   max-width: 1170px;
-  margin-right: auto;
-  margin-left: auto; }
+  margin: auto; }
+
+.wrapper {
+  max-width: 1170px;
+  margin: auto; }
 
 .promo__title {
   font-size: 36px;
