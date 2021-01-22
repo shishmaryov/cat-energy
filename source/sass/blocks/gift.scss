@@ -1,0 +1,17 @@
+.gift {
+
+  &__icon {
+
+    &-svg {
+
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Arial";
+    text-align: center;
+    color: $white;
+  }
+}

@@ -392,10 +392,10 @@ th {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
-  margin: -1px; }
+  margin: -1px;
+  clip: rect(0 0 0 0); }
 
 .wrapper {
   max-width: 1500px; }
@@ -408,16 +408,17 @@ th {
   font-family: "Arial"; }
 
 .button {
-  vertical-align: middle;
-  font-size: 14px;
-  line-height: 18px;
   color: #ffffff;
-  background-color: #68B738;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: #68B738; }
 
 .logo__link {
   text-decoration: none; }
+
+.header__button-close {
+  background-color: transparent;
+  border: none; }
 
 .site-nav__list {
   list-style-type: none; }
@@ -434,6 +435,10 @@ th {
   color: #000000;
   text-decoration: none; }
 
+.site-nav__toggle {
+  background-color: transparent;
+  border: none; }
+
 .main-wrapper {
   max-width: 1170px;
   margin: auto; }
@@ -441,6 +446,172 @@ th {
 .wrapper {
   max-width: 1170px;
   margin: auto; }
+
+/* .footer {
+
+  &__contact {
+
+  }
+
+  &__location {
+
+  }
+
+  &__logo {
+
+  }
+
+  &__author {
+
+  }
+}
+*/
+.contact__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald";
+  color: #000000;
+  text-transform: uppercase; }
+  .contact__title__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444; }
+
+.author__link {
+  text-decoration: none; }
+
+.author__text {
+  font-weight: 400;
+  font-family: "Arial";
+  color: #444444; }
+
+.catalog-main__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Oswald";
+  color: #000000; }
+
+.product__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald";
+  color: #444444;
+  text-transform: uppercase; }
+
+.product__link {
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none; }
+
+.product__button {
+  width: 280px;
+  height: 40px;
+  padding: 13px 109px;
+  line-height: 0px;
+  font-family: "Oswald";
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68B738;
+  border: none; }
+
+.product-table__title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial";
+  color: #444444; }
+
+.product-table__value {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial";
+  color: #444444; }
+
+.open-more__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald";
+  color: #222222;
+  text-transform: uppercase; }
+
+.open-more__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial";
+  color: #444444; }
+
+.open-more__button {
+  width: 279px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 0px;
+  font-family: "Oswald";
+  color: #444444;
+  background-color: #F2F2F2;
+  border: none; }
+
+.additions__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald";
+  color: #000000; }
+
+.additions__gift {
+  background-color: #68B738;
+  background-image: url("../img/gift-photo-mobile@1x.webp"); }
+
+.addition__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Oswald";
+  color: #222222;
+  text-transform: uppercase; }
+
+.addition__link {
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none; }
+
+.addition__button {
+  width: 280px;
+  height: 40px;
+  padding: 13px 109px;
+  line-height: 0px;
+  font-family: "Oswald";
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68B738;
+  border: none; }
+
+.addition-table__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial";
+  color: #444444; }
+
+.addition-table__value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial";
+  color: #444444; }
+
+.gift__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial";
+  text-align: center;
+  color: #ffffff; }
 
 .promo__title {
   font-size: 36px;
@@ -580,44 +751,5 @@ th {
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-  font-family: "Arial";
-  color: #444444; }
-
-/* .footer {
-
-  &__contact {
-
-  }
-
-  &__location {
-
-  }
-
-  &__logo {
-
-  }
-
-  &__author {
-
-  }
-}
-*/
-.contact__title {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Oswald";
-  color: #000000;
-  text-transform: uppercase; }
-  .contact__title__text {
-    font-size: 14px;
-    line-height: 20px;
-    color: #444444; }
-
-.author__link {
-  text-decoration: none; }
-
-.author__text {
-  font-weight: 400;
   font-family: "Arial";
   color: #444444; }

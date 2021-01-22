@@ -5,8 +5,22 @@
 @import "global.scss";
 
 @import "blocks/logo.scss";
+@import "blocks/header.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/wrapper.scss";
+@import "blocks/footer.scss";
+@import "blocks/contact.scss";
+@import "blocks/author.scss";
+
+@import "blocks/catalog-main.scss";
+@import "blocks/product.scss";
+@import "blocks/product-table.scss";
+@import "blocks/open-more.scss";
+@import "blocks/additions.scss";
+@import "blocks/addition.scss";
+@import "blocks/addition-table.scss";
+@import "blocks/gift.scss";
+
 @import "blocks/promo.scss";
 @import "blocks/mode.scss";
 @import "blocks/modes.scss";
@@ -14,7 +28,3 @@
 @import "blocks/example.scss";
 @import "blocks/slider.scss";
 @import "blocks/module.scss";
-@import "blocks/footer.scss";
-@import "blocks/contact.scss";
-
-@import "blocks/author.scss";
