@@ -613,6 +613,9 @@ th {
   text-align: center;
   color: #ffffff; }
 
+.form-page__footer {
+  background-color: #F2F2F2; }
+
 .selection__title {
   font-weight: 400;
   font-size: 36px;
@@ -710,6 +713,67 @@ th {
 .fieldset--goal input:focus + .radio__text:before {
   -webkit-box-shadow: 0 0 0 3px #F2F2F2;
           box-shadow: 0 0 0 3px #F2F2F2; }
+
+.fieldset--contact__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Oswald"; }
+
+.fieldset--contact__input {
+  position: relative;
+  width: 200px;
+  padding: 12px 50px 12px 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald";
+  color: #444444;
+  text-transform: uppercase;
+  border: 1px solid #EBEBEB; }
+
+.fieldset--contact__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald";
+  color: #444444;
+  text-transform: uppercase; }
+
+.fieldset--comment__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Oswald";
+  color: #000000; }
+
+.fieldset--comment__input {
+  width: 280px;
+  height: 150px;
+  padding: 13px 12px 0px 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald";
+  text-align: center;
+  color: #444444;
+  text-transform: uppercase;
+  border: 1px solid #444444; }
+
+.fieldset--additions__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Oswald";
+  color: #000000; }
+
+.required-fields-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial";
+  text-align: center;
+  color: #000000; }
 
 .promo__title {
   font-size: 36px;
