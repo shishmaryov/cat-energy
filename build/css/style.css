@@ -613,6 +613,104 @@ th {
   text-align: center;
   color: #ffffff; }
 
+.selection__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Oswald";
+  color: #000000; }
+
+.selection__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald";
+  color: #000000;
+  text-transform: uppercase; }
+
+.selection__button {
+  width: 280px;
+  height: 40px;
+  padding: 10px 78px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald";
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none; }
+
+.fieldset--base {
+  border-bottom: 1px soild #EBEBEB; }
+  .fieldset--base__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Oswald";
+    color: #444444;
+    text-transform: uppercase; }
+  .fieldset--base__input {
+    padding: 12px 150px 12px 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Oswald";
+    color: #444444;
+    text-transform: uppercase;
+    border: 1px solid #EBEBEB; }
+
+.fieldset--goal__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald";
+  vertical-align: middle;
+  color: #222222;
+  text-transform: uppercase; }
+
+.fieldset--goal input {
+  position: absolute;
+  z-index: -1;
+  margin: 10px 0 0 7px;
+  opacity: 0; }
+
+.fieldset--goal .radio__text {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer; }
+
+.fieldset--goal .radio__text:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: #FFF;
+  border: 1px solid #CDD1DA;
+  border-radius: 50%; }
+
+.fieldset--goal .radio__text:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  background: #9FD468;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+.fieldset--goal input:checked + .radio__text:after {
+  opacity: 1; }
+
+.fieldset--goal input:focus + .radio__text:before {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 0, 0.7);
+          box-shadow: 0 0 0 3px rgba(255, 255, 0, 0.7); }
+
 .promo__title {
   font-size: 36px;
   line-height: 36px;

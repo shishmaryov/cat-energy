@@ -123,30 +123,45 @@
         <p class="text selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="selection__form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="selection-form__fielset fieldset--base">
-            <label class="label fieldset--base__label" for="name">Имя*:</label>
-            <input class="input fieldset--base__input" id="name" type="text" name="name" placeholder="Барсик">
-            <label class="label fieldset--base__label" for="weight">Вес (кг)*:</label>
-            <input class="input fieldset--base__input" id="weight" type="text" name="weight" placeholder="7">
-            <label class="label fieldset--base__label" for="age">Возраст (лет):</label>
-            <input class="input fieldset--base__input" id="age" type="text" name="age" placeholder="7">
+            <label class="label fieldset--base__label" for="name">Имя*:
+              <input class="input fieldset--base__input" id="name" type="text" name="name" placeholder="Барсик">
+            </label>
+            <label class="label fieldset--base__label" for="weight">Вес (кг)*:
+              <input class="input fieldset--base__input" id="weight" type="text" name="weight" placeholder="7">
+            </label>
+            <label class="label fieldset--base__label" for="age">Возраст (лет):
+              <input class="input fieldset--base__input" id="age" type="text" name="age" placeholder="7">
+            </label>
           </fieldset>
           <fieldset class="selection-form__fieldset fieldset--goal">
-            <input class="input fieldset--goal__input" id="lose-weight" type="radio" name="goal" value="lose weight"
-              checked>
-            <label class="label fieldset--goal__label" for="lose-weight">Похудение</label>
-            <input class="input fieldset--goal__input" id="gain-weight" type="radio" name="goal" value="gain weight">
-            <label class="label fieldset--goal__label" for="gain-weight">Набор массы</label>
-            <input class="input fieldset--goal__input" id="advice" type="radio" name="goal" value="advice">
-            <label class="label fieldset--goal__label" for="advice">Не знаю (Нужен ваш совет)</label>
+            <label class="label fieldset--goal__label" for="lose-weight">
+              <input class="input fieldset--goal__input" id="lose-weight" type="radio" name="goal" value="lose weight"
+                checked>
+              <span class="radio__text"></span>
+              Похудение
+            </label>
+            <label class="label fieldset--goal__label" for="gain-weight">
+              <input class="input fieldset--goal__input" id="gain-weight" type="radio" name="goal" value="gain weight">
+              <span class="radio__text"></span>
+              Набор массы
+
+            </label>
+            <label class="label fieldset--goal__label" for="advice">
+              <input class="input fieldset--goal__input" id="advice" type="radio" name="goal" value="advice">
+              <span class="radio__text"></span>
+              Не знаю (Нужен ваш совет)
+            </label>
           </fieldset>
           <fieldset class="selection-form__fieldset fieldset--contact">
             <h2 class="title fieldset--contact__title">Контактные данные (владельца кота)</h2>
-            <input class="input fieldset--contact__input" id="email" type="text" name="email"
-              placeholder="kuklachev@gmail.com">
-            <label class="label fieldset--contact__label" for="email">E-mail:*</label>
-            <input class="input fieldset--contact__input" id="tel" type="tel" name="tel"
-              placeholder="8 (960) 900-60-90">
-            <label class="label fieldset--contact__label" for="tel">Телефон:*</label>
+            <label class="label fieldset--contact__label" for="email">E-mail:*
+              <input class="input fieldset--contact__input" id="email" type="text" name="email"
+                placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="label fieldset--contact__label" for="tel">Телефон:*
+              <input class="input fieldset--contact__input" id="tel" type="tel" name="tel"
+                placeholder="8 (960) 900-60-90">
+            </label>
           </fieldset>
           <fieldset class="selection-form__fieldset fieldset--comment">
             <h2 class="title fieldset--comment__title">Комментарий</h2>
