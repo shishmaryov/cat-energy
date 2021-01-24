@@ -1,0 +1,23 @@
+.product-table {
+
+  &__titles {
+
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Arial";
+    color: $special-dark-grey;
+  }
+  &__values {
+
+  }
+  &__value {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Arial";
+    color: $special-dark-grey;
+  }
+}

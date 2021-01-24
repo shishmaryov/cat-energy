@@ -1,0 +1,31 @@
+.open-more {
+
+  &__plus {
+
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Oswald";
+    color: $special-dark-grey-2;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Arial";
+    color: $special-dark-grey;
+  }
+  &__button {
+    width: 279px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 0px;
+    font-family: "Oswald";
+    color: $special-dark-grey;
+    background-color: $basic-grey;
+    border: none;
+  }
+}

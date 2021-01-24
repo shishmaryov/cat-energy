@@ -1,21 +1,30 @@
 .promo {
 
   &__title {
-  font-size: 36px;
-  line-height: 36px;
+    font-size: 36px;
+    line-height: 36px;
+    color: $white;
   }
 
   &__text {
+    font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    @include Oswald-Regular;
+    font-family: "Oswald";
+    color: $white;
+    text-transform: uppercase;
   }
-  /*
-  &__img {
+  &__background {
+    background-color: $basic-green;
+    background-image: url("../../img/index-background-mobile@2x.webp");
+  }
 
-  }
   &__button {
-
+    padding: 11px 73px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Oswald";
+    color:$white;
   }
-  */
 }

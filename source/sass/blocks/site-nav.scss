@@ -1,0 +1,29 @@
+.site-nav {
+
+  &__list {
+    list-style-type: none;
+  }
+  &__item {
+    padding: 23px 0;
+    border-bottom: 1px solid $basic-grey-2;
+
+    &--current {
+
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Oswald";
+    color: $black;
+    text-decoration: none;
+    &--current {
+
+    }
+  }
+  &__toggle {
+    background-color: transparent;
+    border: none;
+  }
+}

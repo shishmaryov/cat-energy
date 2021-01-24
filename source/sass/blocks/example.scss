@@ -1,0 +1,28 @@
+.example {
+  background-color: $basic-grey;
+  &__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: "Oswald";
+    color: $black;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    color: $special-dark-grey;
+    @include Arial-Regular;
+
+  }
+
+  &__result {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Oswald";
+    color: $black;
+    text-transform: uppercase;
+
+  }
+}

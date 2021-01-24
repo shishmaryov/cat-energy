@@ -1,0 +1,28 @@
+.slider {
+
+  &__img {
+
+    &-were {
+
+    }
+
+    &-became {
+
+    }
+  }
+
+  &__toggles {
+
+  }
+
+  &__toggle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Oswald";
+    color: $black;
+    text-transform: uppercase;
+    background-color: none;
+    border: none;
+  }
+}

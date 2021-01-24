@@ -1,0 +1,45 @@
+.special {
+
+  &__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: "Oswald";
+    color: $black;
+  }
+
+  &__list {
+    padding-left: 0px;
+    list-style-type: none;
+  }
+
+  &__item {
+    
+  }
+
+  &__svg {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: $basic-green;
+    &--leaf {
+      padding: 14px 15px;
+    }
+    &--tub {
+      padding: 13px 16px 16px 15px;
+    }
+    &--fork {
+      padding: 15px 17px 15px 18px;
+    }
+    &--alarm {
+      padding: 13px 14px 14px 14px;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color:$special-dark-grey;
+  }
+}

@@ -1,0 +1,13 @@
+.author {
+  &__link {
+    text-decoration: none;
+  }
+  &__text {
+    font-weight: 400;
+    font-family: "Arial";
+    color:$special-dark-grey;
+
+  }
+  &__img {
+  }
+}

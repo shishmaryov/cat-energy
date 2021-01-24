@@ -1,0 +1,35 @@
+.fieldset--contact {
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "Oswald";
+
+  }
+  &__input {
+    position: relative;
+    width: 200px;
+    padding: 12px 50px 12px 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Oswald";
+    color: $special-dark-grey;
+    text-transform: uppercase;
+    border: 1px solid $basic-grey-2;
+      &--email:after {
+      }
+      &--tel:after {
+
+      }
+  }
+  &__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Oswald";
+    color: $special-dark-grey;
+    text-transform: uppercase;
+  }
+}

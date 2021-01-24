@@ -1,0 +1,32 @@
+.selection {
+
+  &__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    font-family: "Oswald";
+    color: $black;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Oswald";
+    color: $black;
+    text-transform: uppercase;
+  }
+  &__form {
+
+  }
+  &__button {
+    width: 280px;
+    height: 40px;
+    padding: 10px 78px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Oswald";
+    color: $white;
+    text-transform: uppercase;
+    border: none;
+  }
+}

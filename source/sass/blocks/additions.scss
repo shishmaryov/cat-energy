@@ -1,0 +1,18 @@
+.additions {
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: "Oswald";
+    color: $black;
+  }
+  &__item {
+
+  }
+  &__gift {
+    background-color: $basic-green;
+    background-image: url("../img/gift-photo-mobile@1x.webp");
+  }
+}
+
