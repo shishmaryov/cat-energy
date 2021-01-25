@@ -18,9 +18,11 @@
   &__img {
   }
   &__svg {
-    &:before {
+    background-color: $basic-green;
+    background-image: url("../img/Ellipse.svg");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
     }
-  }
 
   &__link {
   position: relative;
