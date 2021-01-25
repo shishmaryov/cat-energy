@@ -416,6 +416,9 @@ th {
 .logo__link {
   text-decoration: none; }
 
+.header__logo {
+  text-align: center; }
+
 .header__button-close {
   background-color: transparent;
   border: none; }
@@ -425,6 +428,7 @@ th {
 
 .site-nav__item {
   padding: 23px 0;
+  text-align: center;
   border-bottom: 1px solid #EBEBEB; }
 
 .site-nav__link {
@@ -447,25 +451,15 @@ th {
   max-width: 1170px;
   margin: auto; }
 
-/* .footer {
+.footer__logo {
+  background-color: #F2F2F2; }
 
-  &__contact {
+.footer__social-icons {
+  background-color: #F2F2F2; }
 
-  }
+.footer__author {
+  background-color: #F2F2F2; }
 
-  &__location {
-
-  }
-
-  &__logo {
-
-  }
-
-  &__author {
-
-  }
-}
-*/
 .contact__title {
   font-weight: 400;
   font-size: 16px;
@@ -477,6 +471,18 @@ th {
     font-size: 14px;
     line-height: 20px;
     color: #444444; }
+
+.social-icons__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 125px;
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none; }
 
 .author__link {
   text-decoration: none; }
@@ -491,6 +497,7 @@ th {
   font-size: 36px;
   line-height: 36px;
   font-family: "Oswald";
+  text-align: center;
   color: #000000; }
 
 .product__title {
@@ -776,8 +783,11 @@ th {
   color: #000000; }
 
 .promo__title {
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  font-family: "Oswald";
+  text-align: center;
   color: #ffffff; }
 
 .promo__text {
@@ -785,6 +795,7 @@ th {
   font-size: 14px;
   line-height: 14px;
   font-family: "Oswald";
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase; }
 
@@ -793,6 +804,9 @@ th {
   background-image: url("../../img/index-background-mobile@2x.webp"); }
 
 .promo__button {
+  max-width: 280px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 11px 73px;
   font-weight: 400;
   font-size: 14px;
@@ -814,6 +828,12 @@ th {
   color: #444444;
   font-family: "Arial", sans-serif;
   font-weight: 400; }
+
+.mode__svg {
+  background-color: #68B738;
+  background-image: url("../img/Ellipse.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 50px; }
 
 .mode__link {
   position: relative;

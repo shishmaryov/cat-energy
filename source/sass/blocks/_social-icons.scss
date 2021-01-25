@@ -1,0 +1,23 @@
+.social-icons {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 125px;
+    margin-right: auto;
+    margin-left: auto;
+    list-style: none;
+  }
+
+  &__item {
+
+    &--vk {
+
+    }
+    &--insta {
+
+    }
+    &--fb {
+
+    }
+  }
+}
