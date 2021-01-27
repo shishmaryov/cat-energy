@@ -10,6 +10,10 @@
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
     padding-left: 0px;
     list-style-type: none;
   }

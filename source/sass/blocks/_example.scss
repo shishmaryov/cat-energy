@@ -3,6 +3,8 @@
   margin-left: 15px;
   background-color: $basic-grey;
   &__title {
+    padding-top: 27px;
+    padding-left: 20px;
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
@@ -11,6 +13,8 @@
   }
 
   &__text {
+    padding-right: 20px;
+    padding-left: 20px;
     font-size: 14px;
     line-height: 18px;
     color: $special-dark-grey;
@@ -19,10 +23,13 @@
   }
 
   &__result {
+    margin-top: 25px;
+    margin-bottom: 42px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     font-family: "Oswald";
+    text-align: center;
     color: $black;
     text-transform: uppercase;
 
