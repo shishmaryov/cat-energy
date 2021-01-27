@@ -1,5 +1,8 @@
 .author {
   &__link {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
     text-decoration: none;
   }
   &__text {

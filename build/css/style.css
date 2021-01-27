@@ -501,6 +501,13 @@ th {
   list-style: none; }
 
 .author__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: middle;
   text-decoration: none; }
 
 .author__text {
