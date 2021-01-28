@@ -1,6 +1,28 @@
 .mode {
-
+  &--slim {
+    margin-bottom: 20px;
+    .mode__title {
+      margin-left: 19px;
+    }
+  }
+  &--pro {
+    .mode__title {
+      margin-left: 11px;
+    }
+  }
+  &__header {
+    display: flex;
+    vertical-align: middle;
+    &--slim {
+      margin-left: 22px;
+    }
+    &--pro {
+      margin-left: 13px;
+    }
+  }
   &__title {
+  margin-top: 30px;
+  margin-bottom: 0px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -10,32 +32,39 @@
   }
 
   &__text {
+  max-width: 227px;
+  margin-top: 22px;
+  margin-left: 20px;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
   @include Arial-Regular;
   }
   &__img {
+    margin-top: 24px;
   }
   &__svg {
-    background-color: $basic-green;
-    background-image: url("../img/Ellipse.svg");
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    }
+
+  }
 
   &__link {
   position: relative;
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 18px;
   font-weight: 400;
   font-size: 16px;
   font-family: "Oswald";
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
+  border-top: 1px solid $special-grey;
   &:after {
     content: url("../img/icon-right-arrow-long.svg");
     position: absolute;
-    top: 0px;
+    top: 15px;
     left: 100px;
     width: 24px;
     height: 12px;

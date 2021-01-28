@@ -1,6 +1,10 @@
 .special {
-
+  margin-top: 27px;
+  margin-bottom: 42px;
   &__title {
+    margin-bottom: 38px;
+    padding-right: 20px;
+    padding-left: 20px;
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
@@ -9,12 +13,19 @@
   }
 
   &__list {
-    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    margin-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
     list-style-type: none;
   }
 
   &__item {
-    
+    display: flex;
+    vertical-align: middle;
   }
 
   &__svg {
@@ -37,6 +48,9 @@
     }
   }
   &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;

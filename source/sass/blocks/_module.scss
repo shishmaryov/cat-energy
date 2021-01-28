@@ -1,18 +1,44 @@
 .module {
-
+  position: relative;
+  margin-top: 40px;
+  text-align: center;
+  &:after {
+    content: url('../img/weight-back.svg');
+    position: absolute;
+    top: -15px;
+    width: 124px;
+    height: 56px;
+  }
+  &--slim {
+    padding-left: 8px;
+    &:after {
+      left: -20px;
+    }
+  }
+  &--pro {
+    &:after {
+      left: -30px;
+    }
+  }
   &__title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     font-family: "Oswald";
     color: $black;
   }
-
   &__text {
+    max-width: 70px;
+    margin-top: 10px;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+    line-height: 12px;
     font-family: "Arial";
     color: $special-dark-grey;
+    background-color: transparent;
   }
 }

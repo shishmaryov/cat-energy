@@ -1,13 +1,23 @@
 .author {
   &__link {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
     text-decoration: none;
   }
   &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 6px;
+    padding-left: 15px;
     font-weight: 400;
+    font-size: 16px;
     font-family: "Arial";
     color:$special-dark-grey;
 
   }
   &__img {
+    padding-right: 15px;
+    padding-bottom: 22px;
   }
 }
