@@ -1,7 +1,10 @@
 .special {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-top: 27px;
+  margin-bottom: 42px;
   &__title {
+    margin-bottom: 38px;
+    padding-right: 20px;
+    padding-left: 20px;
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
@@ -14,7 +17,9 @@
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
-    padding-left: 0px;
+    margin-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
     list-style-type: none;
   }
 
