@@ -1,7 +1,6 @@
 .product-table {
-
+    display: flex;
   &__titles {
-
   }
   &__title {
     font-weight: 400;
@@ -11,7 +10,6 @@
     color: $special-dark-grey;
   }
   &__values {
-
   }
   &__value {
     font-weight: 400;
