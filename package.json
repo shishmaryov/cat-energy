@@ -52,5 +52,15 @@
     "csscomb": "^4.3.0",
     "deep-extend": "^0.6.0",
     "editorconfig-cli": "^0.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shishmaryov/cat-energy.git"
+  },
+  "author": "Konstantin Shishmaryov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shishmaryov/cat-energy/issues"
+  },
+  "homepage": "https://github.com/shishmaryov/cat-energy#readme"
 }

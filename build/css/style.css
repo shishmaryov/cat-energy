@@ -16,6 +16,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -376,19 +377,19 @@ th {
   font-weight: 400;
   font-family: "Oswald", sans-serif;
   font-style: normal;
-  src: url("../fonts/Oswald-Regular.ttf") format(truetype); }
+  src: url("../fonts/static/Oswald-Regular.ttf") format(truetype); }
 
 @font-face {
   font-weight: 500;
   font-family: "Oswald", sans-serif;
   font-style: normal;
-  src: url("../fonts/Oswald-Medium.ttf") format(truetype); }
+  src: url("../fonts/static/Oswald-Medium.ttf") format(truetype); }
 
 @font-face {
   font-weight: 400;
   font-family: "Arial" , sans-serif;
   font-style: normal;
-  src: url("../fonts/Arial-Regular.ttf") format(truetype); }
+  src: url("../fonts/static/Arial-Regular.ttf") format(truetype); }
 
 .visually-hidden {
   position: absolute;
@@ -401,11 +402,11 @@ th {
   max-width: 1500px; }
 
 .title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   color: #000000; }
 
 .text {
-  font-family: "Arial"; }
+  font-family: "Arial", sans-serif; }
 
 .button {
   color: #ffffff;
