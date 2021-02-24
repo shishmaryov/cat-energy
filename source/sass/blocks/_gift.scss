@@ -1,12 +1,15 @@
 .gift {
-
+  width: 280px;
+  height: 289px;
   &__icon {
-
+    padding-top: 58px;
+    text-align: center;
     &-svg {
 
     }
   }
   &__text {
+    padding: 0 60px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;

@@ -511,7 +511,8 @@ th {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 28px;
-  padding-bottom: 28px; }
+  padding-bottom: 28px;
+  background-color: #F2F2F2; }
   .contact__title {
     max-width: 125px;
     margin-top: 0;
@@ -620,29 +621,36 @@ th {
   color: #000000;
   border-bottom: 1px solid #EBEBEB; }
 
-.product__title {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Oswald";
-  color: #444444;
-  text-transform: uppercase; }
-
-.product__link {
-  vertical-align: middle;
+.products__open-more {
+  margin-top: 26px;
+  margin-bottom: 25px;
+  padding-top: 25px;
   text-align: center;
-  text-decoration: none; }
+  border-top: 1px solid #EBEBEB; }
 
-.product__button {
-  width: 280px;
-  height: 40px;
-  padding: 13px 109px;
-  line-height: 0px;
-  font-family: "Oswald";
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #68B738;
-  border: none; }
+.product {
+  padding-left: 20px; }
+  .product__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Oswald";
+    color: #444444;
+    text-transform: uppercase; }
+  .product__link {
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none; }
+  .product__button {
+    width: 280px;
+    height: 40px;
+    padding: 13px 109px;
+    line-height: 0px;
+    font-family: "Oswald";
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #68B738;
+    border: none; }
 
 .product-table {
   display: -webkit-box;
@@ -686,40 +694,56 @@ th {
   background-color: #F2F2F2;
   border: none; }
 
-.additions__title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: "Oswald";
-  color: #000000; }
+.additions {
+  padding-top: 28px;
+  border-top: 1px solid #EBEBEB; }
+  .additions__title {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: "Oswald";
+    color: #000000; }
+  .additions__item--last {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EBEBEB; }
+  .additions__gift {
+    margin-top: 40px;
+    background-color: #68B738;
+    background-image: url("../img/gift-photo-mobile@1x.webp"); }
 
-.additions__gift {
-  background-color: #68B738;
-  background-image: url("../img/gift-photo-mobile@1x.webp"); }
-
-.addition__title {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  font-family: "Oswald";
-  color: #222222;
-  text-transform: uppercase; }
-
-.addition__link {
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none; }
-
-.addition__button {
-  width: 280px;
-  height: 40px;
-  padding: 13px 109px;
-  line-height: 0px;
-  font-family: "Oswald";
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #68B738;
-  border: none; }
+.addition {
+  margin-bottom: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #EBEBEB; }
+  .addition__title {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Oswald";
+    color: #222222;
+    text-transform: uppercase; }
+  .addition__table tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .addition__link {
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none; }
+  .addition__button {
+    width: 280px;
+    height: 40px;
+    padding: 13px 109px;
+    line-height: 0px;
+    font-family: "Oswald";
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #68B738;
+    border: none; }
 
 .addition-table__title {
   font-weight: 400;
@@ -735,13 +759,20 @@ th {
   font-family: "Arial";
   color: #444444; }
 
-.gift__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Arial";
-  text-align: center;
-  color: #ffffff; }
+.gift {
+  width: 280px;
+  height: 289px; }
+  .gift__icon {
+    padding-top: 58px;
+    text-align: center; }
+  .gift__text {
+    padding: 0 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Arial";
+    text-align: center;
+    color: #ffffff; }
 
 .form-page__footer {
   background-color: #F2F2F2; }

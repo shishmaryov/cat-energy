@@ -1,16 +1,21 @@
 .additions {
-
+  padding-top: 28px;
+  border-top: 1px solid $basic-grey-2;
   &__title {
+    margin-top: 0px;
+    margin-bottom: 35px;
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     font-family: "Oswald";
     color: $black;
   }
-  &__item {
-
+  &__item--last {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $basic-grey-2;
   }
   &__gift {
+    margin-top: 40px;
     background-color: $basic-green;
     background-image: url("../img/gift-photo-mobile@1x.webp");
   }
