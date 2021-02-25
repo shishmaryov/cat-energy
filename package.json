@@ -13,7 +13,7 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
+    "gulp-postcss": "^8.0.0",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
@@ -21,6 +21,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
+    "postcss-sorting": "^6.0.0",
     "posthtml-include": "^1.3.2",
     "stylelint": "^10.1.0",
     "stylelint-config-htmlacademy": "^0.1.4"
@@ -52,5 +53,15 @@
     "csscomb": "^4.3.0",
     "deep-extend": "^0.6.0",
     "editorconfig-cli": "^0.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shishmaryov/cat-energy.git"
+  },
+  "author": "Konstantin Shishmaryov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shishmaryov/cat-energy/issues"
+  },
+  "homepage": "https://github.com/shishmaryov/cat-energy#readme"
 }

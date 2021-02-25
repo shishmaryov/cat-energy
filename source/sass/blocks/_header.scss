@@ -2,9 +2,19 @@
   margin-right: 20px;
   margin-left: 20px;
   &__logo {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin-top: 12px;
+    margin-right: 20px;
+    margin-left: 20px;
+
   }
-  &__button-close {
+  &__open {
+    background-color: transparent;
+    border: none;
+  }
+  &__close {
     background-color: transparent;
     border: none;
 

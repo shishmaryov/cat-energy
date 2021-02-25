@@ -1,6 +1,10 @@
 .addition {
-
+  margin-bottom: 20px;
+  padding-top: 15px;
+  border-top: 1px solid $basic-grey-2;
   &__title {
+    margin-top: 0px;
+    margin-bottom: 15px;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
@@ -9,7 +13,9 @@
     text-transform: uppercase;
   }
   &__table {
-
+    tbody {
+      display: flex;
+    }
   }
   &__link {
     vertical-align: middle;

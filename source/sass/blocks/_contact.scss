@@ -1,17 +1,30 @@
 .contact {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background-color: $basic-grey;
   &__title {
+    max-width: 125px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     font-family: "Oswald";
     color: $black;
     text-transform: uppercase;
-
+  }
     &__text {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0.12px;
+      padding-right: 20px;
       font-size: 14px;
       line-height: 20px;
+      line-height: 16px;
       color:$special-dark-grey;
     }
   }
-}
 

@@ -1,13 +1,15 @@
 .logo {
-
+  padding-bottom: 17px;
+  border-bottom: 1px solid $basic-grey-2;
   &__link {
+    height: 100%;
     text-decoration: none;
   }
   &__img {
 
   }
   &__text {
-
+    margin-top: 12px;
   }
   &-svg {
   }
