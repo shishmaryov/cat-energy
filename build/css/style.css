@@ -16,6 +16,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -385,14 +386,11 @@ th {
   src: url("../fonts/static/Oswald-Medium.ttf"); }
 
 @font-face {
-  font-weight: normal;
   font-weight: 400;
   font-family: "Arial";
   font-style: normal;
   src: url("../fonts/static/Arial-Regular.ttf"); }
 
-/*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
-*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -425,26 +423,38 @@ th {
   .logo__text {
     margin-top: 12px; }
 
-.header {
-  margin-right: 20px;
-  margin-left: 20px; }
-  .header__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    max-width: 280px;
-    margin-top: 12px;
-    margin-right: 20px;
-    margin-left: 20px; }
-  .header__open {
-    background-color: transparent;
-    border: none; }
-  .header__close {
-    background-color: transparent;
-    border: none; }
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.header__wrapper-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.header__open {
+  background-color: transparent;
+  border: none; }
+
+.header__close {
+  background-color: transparent;
+  border: none; }
 
 .site-nav__list {
   margin-top: 0px;
@@ -470,40 +480,26 @@ th {
   color: #000000;
   text-decoration: none; }
 
-.main-wrapper {
+.container {
   max-width: 320px;
-  margin: auto; }
+  margin: 0 auto;
+  padding: 0 20px; }
 
-.wrapper {
-  max-width: 320px;
-  margin: auto; }
-
-.footer__contact {
-  padding-right: 15px;
-  padding-left: 15px; }
-
-.footer__location {
-  margin-right: 15px;
-  margin-left: 15px; }
-
-.footer__logo {
-  margin-right: 15px;
-  margin-left: 15px;
-  padding-top: 40px;
-  text-align: center;
-  background-color: #F2F2F2; }
-
-.footer__social-icons {
-  margin-right: 15px;
-  margin-left: 15px;
-  padding-top: 32px;
-  padding-bottom: 22px;
-  background-color: #F2F2F2; }
-
-.footer__author {
-  margin-right: 15px;
-  margin-left: 15px;
-  background-color: #F2F2F2; }
+.footer {
+  margin-top: 35px; }
+  .footer__contact {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .footer__logo {
+    padding-top: 40px;
+    text-align: center;
+    background-color: #F2F2F2; }
+  .footer__social-icons {
+    padding-top: 32px;
+    padding-bottom: 22px;
+    background-color: #F2F2F2; }
+  .footer__author {
+    background-color: #F2F2F2; }
 
 .contact {
   display: -webkit-box;
@@ -613,9 +609,7 @@ th {
 
 .catalog-main__title {
   margin-top: 27px;
-  margin-right: 20px;
   padding-bottom: 41px;
-  padding-left: 20px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -630,29 +624,29 @@ th {
   text-align: center;
   border-top: 1px solid #EBEBEB; }
 
-.product {
-  padding-left: 20px; }
-  .product__title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    font-family: "Oswald";
-    color: #444444;
-    text-transform: uppercase; }
-  .product__link {
-    vertical-align: middle;
-    text-align: center;
-    text-decoration: none; }
-  .product__button {
-    width: 280px;
-    height: 40px;
-    padding: 13px 109px;
-    line-height: 0px;
-    font-family: "Oswald";
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #68B738;
-    border: none; }
+.product__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald";
+  color: #444444;
+  text-transform: uppercase; }
+
+.product__link {
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none; }
+
+.product__button {
+  width: 280px;
+  height: 40px;
+  padding: 13px 109px;
+  line-height: 0px;
+  font-family: "Oswald";
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68B738;
+  border: none; }
 
 .product-table {
   display: -webkit-box;
@@ -939,9 +933,7 @@ th {
   color: #000000; }
 
 .promo {
-  position: relative;
-  margin-right: 15px;
-  margin-left: 15px; }
+  position: relative; }
   .promo__title {
     margin: 0;
     padding-top: 27px;
@@ -1044,9 +1036,7 @@ th {
     height: 12px; }
 
 .modes {
-  margin-top: 197px;
-  margin-right: 15px;
-  margin-left: 15px; }
+  margin-top: 197px; }
   .modes__list {
     margin: 0;
     padding-left: 0;
@@ -1059,8 +1049,6 @@ th {
   margin-bottom: 42px; }
   .special__title {
     margin-bottom: 38px;
-    padding-right: 20px;
-    padding-left: 20px;
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
@@ -1079,8 +1067,7 @@ th {
             justify-content: space-between;
     height: 300px;
     margin-top: 0;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 0px;
     list-style-type: none; }
   .special__item {
     display: -webkit-box;
@@ -1111,28 +1098,25 @@ th {
     color: #444444; }
 
 .example {
-  margin-right: 15px;
-  margin-left: 15px;
   background-color: #F2F2F2; }
   .example__title {
     padding-top: 27px;
-    padding-left: 20px;
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
     font-family: "Oswald";
     color: #000000; }
+  .example__text-block {
+    margin-bottom: 34px;
+    padding: 0 20px; }
   .example__text {
-    padding-right: 20px;
-    padding-left: 20px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #444444;
-    font-family: "Arial", sans-serif;
-    font-weight: 400; }
+    font-family: "Arial";
+    color: #444444; }
   .example__result {
     margin-top: 25px;
-    margin-bottom: 42px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
