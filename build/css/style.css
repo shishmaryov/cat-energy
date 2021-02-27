@@ -485,22 +485,21 @@ th {
   margin: 0 auto;
   padding: 0 20px; }
 
-.footer__contact {
-  padding-right: 15px;
-  padding-left: 15px; }
-
-.footer__logo {
-  padding-top: 40px;
-  text-align: center;
-  background-color: #F2F2F2; }
-
-.footer__social-icons {
-  padding-top: 32px;
-  padding-bottom: 22px;
-  background-color: #F2F2F2; }
-
-.footer__author {
-  background-color: #F2F2F2; }
+.footer {
+  margin-top: 35px; }
+  .footer__contact {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .footer__logo {
+    padding-top: 40px;
+    text-align: center;
+    background-color: #F2F2F2; }
+  .footer__social-icons {
+    padding-top: 32px;
+    padding-bottom: 22px;
+    background-color: #F2F2F2; }
+  .footer__author {
+    background-color: #F2F2F2; }
 
 .contact {
   display: -webkit-box;
