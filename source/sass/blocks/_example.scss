@@ -1,10 +1,8 @@
 .example {
-  margin-right: 15px;
-  margin-left: 15px;
   background-color: $basic-grey;
+
   &__title {
     padding-top: 27px;
-    padding-left: 20px;
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
@@ -12,19 +10,21 @@
     color: $black;
   }
 
+  &__text-block {
+    margin-bottom: 34px;
+    padding: 0 20px;
+  }
+
   &__text {
-    padding-right: 20px;
-    padding-left: 20px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+    font-family: "Arial";
     color: $special-dark-grey;
-    @include Arial-Regular;
-
   }
 
   &__result {
     margin-top: 25px;
-    margin-bottom: 42px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
