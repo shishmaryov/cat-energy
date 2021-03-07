@@ -480,10 +480,23 @@ th {
   color: #000000;
   text-decoration: none; }
 
-.container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px; }
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+    margin: auto;
+    padding: 0 20px; } }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: auto;
+    padding: 0 20px; } }
+
+@media (max-width: 1170px) {
+  .container {
+    max-width: 1170px;
+    margin: auto;
+    padding: auto; } }
 
 .footer {
   margin-top: 35px; }
