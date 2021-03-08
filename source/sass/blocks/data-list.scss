@@ -1,0 +1,160 @@
+.data-list {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.data-list__item {
+  position: relative;
+
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.data-list__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $default-font;
+  color: $black-light;
+  text-transform: uppercase;
+}
+
+.data-list__input {
+  flex-grow: 1;
+  height: 45px;
+  margin-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 14px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  font-family: $default-font;
+  color: $gray;
+  text-transform: uppercase;
+
+  border: 1px solid $input-color;
+  outline: none;
+
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  &:hover {
+    border: 1px solid $input-color--hover;
+  }
+
+  &:invalid:not(:focus):not(:placeholder-shown) {
+    border: 1px solid $invalid-color;
+    box-shadow: inset 0 0 0 1px $invalid-color;
+
+    & ~ .data-list__icon {
+      fill: $invalid-color;
+    }
+  }
+
+  &:focus {
+    border: 1px solid $focus-color;
+    box-shadow: inset 0 0 0 1px $focus-color;
+
+    & ~ .data-list__icon {
+      fill: $focus-color--icon;
+    }
+  }
+}
+
+.data-list__input--email,
+.data-list__input--phone {
+  margin-left: 11px;
+}
+
+.data-list__icon--mail {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+
+  width: 17px;
+  height: 13px;
+}
+
+.data-list__icon--phone {
+  position: absolute;
+  top: 14px;
+  right: 13px;
+
+  width: 20px;
+  height: 20px;
+
+  &:hover {
+    fill: $green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .data-list__item {
+    margin-bottom: 20px;
+  }
+
+  .data-list__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .data-list__input {
+    height: 52px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .data-list__input--email {
+    padding-left: 19px;
+  }
+
+  .data-list__input--phone {
+    margin-left: 15px;
+    padding-left: 17px;
+  }
+
+  .data-list__icon--mail {
+    top: 22px;
+    right: 19px;
+  }
+
+  .data-list__icon--phone {
+    top: 18px;
+    right: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data-list--owner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  .data-list__item--owner {
+    width: 570px;
+  }
+
+  .data-list__icon--mail {
+    top: 21px;
+    right: 20px;
+  }
+
+  .data-list__icon--phone {
+    top: 17px;
+    right: 19px;
+  }
+}

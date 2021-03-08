@@ -1,23 +1,48 @@
 .site-nav {
+  display: none;
+
+  @media(min-width: 768px) {
+    display: flex;
+  }
   &__list {
     margin-top: 0px;
     margin-bottom: 0;
     padding-right: 20px;
     padding-left: 20px;
     list-style-type: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      width: 440px;
+      padding: 0;
+    }
     &:nth-child(1) {
       padding-top: 0;
     }
+
   }
   &__item {
     padding: 23px 0;
-    padding-top: 23px;
-    padding-bottom: 23px;
     text-align: center;
     border-bottom: 1px solid $basic-grey-2;
 
+    @media (min-width: 768px) {
+      margin-bottom: 0px;
+      padding: 0;
+      padding-top: 21px;
+      padding-bottom: 7px;
+      text-align: center;
+      border-top: none;
+      border-bottom: none;
+
+    }
+
     &--current {
 
+      @media (min-width: 768px) {
+        border-bottom: 1px solid $basic-green;
+      }
     }
   }
   &__link {
@@ -26,9 +51,15 @@
     line-height: 20px;
     font-family: "Oswald";
     color: $black;
+    text-transform: uppercase;
     text-decoration: none;
+
+    @media (min-width: 768px) {
+      font-weight: 400;
+    }
     &--current {
 
     }
   }
+
 }

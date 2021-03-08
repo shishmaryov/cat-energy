@@ -1,0 +1,137 @@
+.contact__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 25px;
+}
+
+.contact__info--color {
+  background-color: $gray-light;
+}
+
+.contact__tagline {
+  min-width: 140px;
+  max-width: 160px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $default-font;
+  color: $black-light;
+  text-transform: uppercase;
+}
+
+.contact__address {
+  min-width: 140px;
+  max-width: 160px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $second-font;
+  color: $gray;
+}
+
+.contact__map {
+  position: relative;
+
+  width: 100%;
+  height: 362px;
+
+  background-color: $gray;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@1x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contact__info {
+    padding-top: 64px;
+    padding-right: 42px;
+    padding-bottom: 56px;
+    padding-left: 42px;
+  }
+
+  .contact__wrapper {
+    position: relative;
+  }
+
+  .contact__tagline {
+    padding-top: 2px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contact__address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .contact__street {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .contact__town {
+    display: block;
+  }
+
+  .contact__map {
+    height: 400px;
+
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact {
+    position: relative;
+  }
+
+  .contact__info {
+    position: absolute;
+    top: 96px;
+    left: 40px;
+    z-index: 10;
+
+    width: 570px;
+    padding-top: 65px;
+    padding-right: 85px;
+    padding-bottom: 56px;
+    padding-left: 75px;
+
+    background-color: $white;
+  }
+
+  .contact__address {
+    text-align: left;
+  }
+
+  .contact__map {
+    position: relative;
+
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
+  }
+}

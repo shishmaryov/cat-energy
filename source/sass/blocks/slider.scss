@@ -1,0 +1,300 @@
+.slider__slides {
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  text-align: center;
+}
+
+.slider__item--finish {
+  display: none;
+}
+
+.slider__block {
+  display: flex;
+  align-items: center;
+  width: 208px;
+  margin: 0 auto;
+  margin-bottom: 21px;
+  padding-bottom: 14px;
+}
+
+.slider__control {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  width: 84px;
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  background-color: $white;
+  border: 1px solid $gray-light;
+  border-radius: 7px;
+}
+
+.slider__button {
+  position: relative;
+
+  background: transparent;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 6px;
+
+    display: block;
+    width: 34px;
+    height: 6px;
+
+    background-color: $green;
+    border-radius: 3px;
+    transform: scale(1);
+    cursor: pointer;
+  }
+}
+
+.slider__text {
+  width: 50px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $default-font;
+  text-align: center;
+  color: $black-light;
+  text-transform: uppercase;
+}
+
+.slider__text--before {
+  margin-right: 5px;
+  margin-left: 7px;
+}
+
+.slider__image {
+  display: block;
+  margin: 0 auto;
+}
+
+/*Переключатель слайдов - Скрытие неактивных слайдов*/
+
+input[id="toggle-start"]:checked ~ .slider__wrapper .slider__item--finish {
+  display: none;
+}
+
+input[id="toggle-start"]:checked ~ .slider__wrapper .slider__button {
+  left: 0;
+
+  transition: all 0.4s ease;
+}
+
+input[id="toggle-finish"]:checked ~ .slider__wrapper .slider__item--finish {
+  display: block;
+}
+
+input[id="toggle-finish"]:checked ~ .slider__wrapper .slider__item--start {
+  display: none;
+}
+
+input[id="toggle-finish"]:checked ~ .slider__wrapper .slider__button {
+  left: 37px;
+
+  transition: all 0.4s ease;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__wrapper {
+    padding-bottom: 30px;
+
+    background-image: linear-gradient(to bottom, white 168px, transparent 168px),
+      linear-gradient(to right, $gray-light 50%, $gray-lighter 50%);
+  }
+
+  .slider__slides {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .slider__item {
+    display: block;
+    width: 690px;
+    height: 517px;
+    margin: 0 auto;
+  }
+
+  .slider__block {
+    justify-content: center;
+    width: 690px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
+
+  .slider__image {
+    position: absolute;
+    top: -1px;
+    left: 16px;
+
+    width: 690px;
+    height: 517px;
+  }
+
+  .slider__image--start {
+    clip: rect(auto, 337px, auto, auto);
+  }
+
+  .slider__image--finish {
+    clip: rect(auto, auto, auto, 337px);
+  }
+
+  .slider__control {
+    position: relative;
+
+    width: 428px;
+    height: 6px;
+    margin-right: 21px;
+    margin-left: 22px;
+    padding: 0;
+
+    background-color: $slider-button-color;
+    border: 0;
+    border-radius: 3px;
+  }
+
+  .slider__button {
+    top: 0;
+    left: 197px;
+
+    display: block;
+    width: 32px;
+    height: 32px;
+
+    background-color: $white;
+    border: 1px solid $slider-button-color;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    &::before {
+      top: 0;
+      bottom: 0;
+      left: 11px;
+      z-index: 2;
+
+      width: 8px;
+      height: 8px;
+      margin: auto;
+
+      border-radius: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 1px solid $green;
+      box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 1px $green;
+    }
+  }
+
+  .slider__text {
+    width: 50px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+
+    font-size: 20px;
+
+    border-bottom: 1px dotted $slider-color-text;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid $slider-color-text--hover;
+    }
+  }
+
+  .slider__text--before {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  /*Переключатель слайдов - Скрытие неактивных слайдов*/
+  input[id="toggle-start"]:checked ~ .slider__wrapper .slider__button {
+    left: -12px;
+
+    transition: all 0.4s ease;
+  }
+
+  input[id="toggle-start"]:checked ~ .slider__wrapper .slider__image--start {
+    clip: rect(auto, auto, auto, auto);
+  }
+
+  input[id="toggle-start"]:checked ~ .slider__wrapper {
+    background-image: linear-gradient(to bottom, white 168px, transparent 168px), linear-gradient(to right, $gray-light 0%, $gray-lighter 100%);
+
+    transition: all 1.4s ease;
+  }
+
+  input[id="toggle-finish"]:checked ~ .slider__wrapper .slider__image--finish {
+    clip: rect(auto, auto, auto, auto);
+  }
+
+  input[id="toggle-finish"]:checked ~ .slider__wrapper .slider__button {
+    left: 408px;
+
+    transition: all 0.4s ease;
+  }
+
+  input[id="toggle-finish"]:checked ~ .slider__wrapper {
+    background-image: linear-gradient(to bottom, white 168px, transparent 168px), linear-gradient(to left, $gray-light 0%, $gray-lighter 0%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__wrapper {
+    background-image: linear-gradient(to bottom, white 208px, transparent 208px), linear-gradient(to right, $gray-light 58.5%, $gray-lighter 58.5%);
+  }
+
+  .slider__image {
+    top: 17px;
+    left: 40px;
+  }
+
+  .slider__image--start {
+    clip: rect(auto, 365px, auto, auto);
+  }
+
+  .slider__image--finish {
+    clip: rect(auto, auto, auto, 365px);
+  }
+
+  .slider__slides {
+    width: auto;
+  }
+
+  .slider__block {
+    justify-content: flex-end;
+    margin-top: 38px;
+    margin-bottom: 19px;
+  }
+
+  .slider__button {
+    left: 198px;
+  }
+
+  /*Переключатель слайдов - Скрытие неактивных слайдов*/
+  input[id="toggle-start"]:checked ~ .slider__wrapper {
+    background-image: linear-gradient(to bottom, white 208px, transparent 208px),
+      linear-gradient(to right, $gray-light 0%, $gray-lighter 100%);
+  }
+
+  input[id="toggle-finish"]:checked ~ .slider__wrapper {
+    background-image: linear-gradient(to bottom, white 208px, transparent 208px),
+      linear-gradient(to left, $gray-light 0%, $gray-lighter 0%);
+  }
+}

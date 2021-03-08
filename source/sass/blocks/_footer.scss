@@ -1,5 +1,5 @@
 .footer {
-margin-top: 35px;
+margin-top: 0px;
 
   &__contact {
     padding-right: 15px;
@@ -13,6 +13,13 @@ margin-top: 35px;
     padding-top: 40px;
     text-align: center;
     background-color: $basic-grey;
+    padding-bottom: 0;
+    border-bottom: none;
+
+      &-svg {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
   }
   &__social-icons {
     padding-top: 32px;
