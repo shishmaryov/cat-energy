@@ -1,57 +1,86 @@
 .mode {
-  &--slim {
-    margin-bottom: 20px;
-    .mode__title {
-      margin-left: 19px;
-    }
-  }
-  &--pro {
-    .mode__title {
-      margin-left: 11px;
-    }
-  }
+  background-color: $basic-grey;
+  padding-left: 20px;
+  margin-bottom: 20px;
+
   &__header {
     display: flex;
     vertical-align: middle;
-    &--slim {
-      margin-left: 22px;
-    }
-    &--pro {
-      margin-left: 13px;
-    }
+    margin-left: 0;
   }
   &__title {
-  margin-top: 30px;
-  margin-bottom: 0px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
-  font-family: "Oswald";
-  color: $black;
-  text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    margin-bottom: 29px;
+    padding: 0;
+    padding-top: 32px;
+    padding-left: 72px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37.02px;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #111111;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 3px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-color: #68b738;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      border-radius: 50%;
+    }
+
+    &--slim {
+      &::after {
+        content: "";
+      position: absolute;
+      top: 24px;
+      left: 11px;
+      z-index: 2;
+      display: block;
+      width: 35px;
+      height: 49px;
+      background-image: url(../img/icon-cat-slim.svg);
+      }
+    }
+
+    &--pro {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 36px;
+        left: -6px;
+        z-index: 2;
+        display: block;
+        width: 67px;
+        height: 28px;
+        background-image: url(../img/icon-cat-pro.svg);
+      }
+    }
   }
 
   &__text {
-  max-width: 227px;
-  margin-top: 22px;
-  margin-left: 20px;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special-dark-grey;
-  @include Arial-Regular;
-  }
-  &__img {
-    margin-top: 24px;
-  }
-  &__svg {
-
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-right: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial", sans-serif;
+    color: #444444;
   }
 
   &__link {
   position: relative;
   display: block;
-  margin-right: 20px;
-  margin-left: 20px;
   padding-top: 15px;
   padding-bottom: 18px;
   font-weight: 400;

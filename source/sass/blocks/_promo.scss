@@ -1,6 +1,14 @@
 .promo {
   position: relative;
 
+  @media (min-width: 768px) {
+    min-height: 836px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 117px;
+    flex-direction: column;
+  }
+
   &__title {
     margin: 0;
     padding-top: 27px;
@@ -10,11 +18,22 @@
     font-family: "Oswald";
     text-align: center;
     color: $white;
+
+    @media (min-width: 768px) {
+      width: 420px;
+      margin-bottom: 40px;
+      margin-left: 0;
+      font-size: 60px;
+      line-height: 60px;
+      text-align: left;
+      color: #111111;
+    }
   }
 
   &__text {
     margin-top: 25px;
-    padding-bottom: 167px;
+    margin-bottom: 0;
+    padding-bottom: 303px;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
@@ -22,26 +41,47 @@
     text-align: center;
     color: $white;
     text-transform: uppercase;
-  }
-  &__background {
-    background-color: $basic-green;
-    background-image: url("../img/index-background-mobile@1x.webp");
-  }
+
+    @media (min-width: 768px) {
+      padding-bottom: 0;
+      margin-bottom: 48px;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: left;
+      color: #111111;
+}
+    }
+
   &__img {
     position: absolute;
     top: 167px;
+    z-index: -1;
+
+    @media (min-width: 768px) {
+      top: 252px;
+      left: 30px;
+      width: 709px;
+      height: 609px;
+    }
   }
+
   &__button {
-    position: absolute;
-    top: 440px;
-    max-width: 280px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 11px 73px;
+    display: block;
+    width: 280px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    font-family: "Oswald";
-    color:$white;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+
+    @media (min-width:768px) {
+      width: 244px;
+      margin-bottom: 526px;
+    }
   }
 }

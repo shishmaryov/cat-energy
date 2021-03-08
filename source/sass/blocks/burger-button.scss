@@ -1,0 +1,11 @@
+.burger-button {
+  width: 24px;
+  height: 18px;
+
+  background: url("../img/icon-mobile-menu.svg") no-repeat center center;
+  border: none;
+}
+
+.burger-button--close {
+  background: url("../img/icon-close.svg") no-repeat center center;
+}

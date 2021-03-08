@@ -13,45 +13,69 @@
 
   &__list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-    height: 300px;
-    margin-top: 0;
-    padding-left: 0px;
+    margin: 0;
+    /*height: 300px;*/
+    padding: 0;
     list-style-type: none;
   }
 
   &__item {
-    display: flex;
-    vertical-align: middle;
-  }
-
-  &__svg {
-    width: 60px;
-    height: 60px;
-    vertical-align: middle;
-    text-align: center;
-    background-color: $basic-green;
-    &--leaf {
-      padding: 14px 15px;
-    }
-    &--tub {
-      padding: 13px 16px 16px 15px;
-    }
-    &--fork {
-      padding: 15px 17px 15px 18px;
-    }
-    &--alarm {
-      padding: 13px 14px 14px 14px;
-    }
-  }
-  &__text {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 20px;
+    position: relative;
+    display: block;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color:$special-dark-grey;
+    font-family: "Arial", sans-serif;
+    color: #444444;
+
+    &--leaf::before {
+      background-image: url("../../img/advantage-leaf@2x.png");
+      background-size: 50px 50px;
+    }
+
+    &--powder::before {
+      background-image: url("../../img/advantage-powder@2x.png");
+      background-size: 50px 50px;
+    }
+
+    &--dining::before {
+      background-image: url("../../img/advantage-dining@2x.png");
+      background-size: 50px 50px;
+    }
+
+    &--clock::before {
+      background-image: url("../../img/advantage-clock@2x.png");
+      background-size: 50px 50px;
+    }
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 1px;
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-color: #68b738;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  &__text {
+    width: 200px;
+    margin: 0;
+    margin-left: 81px;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial", sans-serif;
   }
 }

@@ -1,0 +1,48 @@
+.message__text {
+  width: 100%;
+  min-height: 150px;
+  padding-top: 12px;
+  padding-right: 13px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $default-font;
+  color: $gray;
+  text-transform: uppercase;
+
+  border: 1px solid $input-color;
+  outline: none;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  &:hover {
+    border: 1px solid $input-color--hover;
+  }
+
+  &:focus {
+    border: 1px solid $focus-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .message__text {
+    min-height: 174px;
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-left: 17px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .message__text {
+    min-height: 174px;
+  }
+}

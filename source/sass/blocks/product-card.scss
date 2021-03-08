@@ -1,0 +1,262 @@
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.product-card__photo {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card__image {
+  display: block;
+}
+
+.product-card__description {
+  width: 140px;
+}
+
+.product-card__title {
+  width: 77px;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 12px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $default-font;
+  color: $black-light;
+  text-transform: uppercase;
+}
+
+.product-card__link-title {
+  color: $black-light;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-card__specification {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.product-card__line {
+  min-width: 140px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $second-font;
+  color: $gray;
+}
+
+.product-card__field {
+  width: 50%;
+}
+
+.product-card__value {
+  width: 50%;
+  margin-left: auto;
+
+  text-align: right;
+}
+
+
+.product-card__button {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.product-add {
+  position: relative;
+
+  text-align: center;
+
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.product-add__title {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  padding-top: 80px;
+}
+
+.product-add__tagline {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.product-add__button {
+  width: 100%;
+  margin-bottom: 25px;
+  padding-right: 38px;
+  padding-left: 38px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    z-index: 2;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+
+    background-image: url("../img/icon-plus.svg");
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    width: 324px;
+    margin-top: 58px;
+
+    background-color: $gray-light;
+    background-image: linear-gradient(to bottom, white 80px, transparent 80px);
+    border-bottom: none;
+  }
+
+  .product-card__photo {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 208px;
+  }
+
+  .product-card__description {
+    width: 100%;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
+  .product-card__title {
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 37px;
+    margin-bottom: 19px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .product-card__line {
+    margin: 0 auto;
+    padding-top: 7px;
+    padding-bottom: 6px;
+
+    font-size: 16px;
+    line-height: 16px;
+
+    border-bottom: 1px solid $gray-lighter;
+  }
+
+  .product-card__field {
+    width: 50%;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  .product-card__value {
+    width: 50%;
+    margin-left: auto;
+    padding-top: 8px;
+    padding-bottom: 7px;
+
+    text-align: right;
+  }
+
+  .product-card__button {
+    width: 100%;
+    margin-top: 33px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    margin-left: 38px;
+  }
+
+  .product-add {
+    width: 324px;
+    margin-top: 140px;
+    padding-right: 38px;
+    padding-left: 38px;
+
+    border: 1px solid $gray-light;
+  }
+
+  .product-add__title {
+    width: 135px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    padding-top: 162px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .product-add__tagline {
+    width: 167px;
+    margin: 0 auto;
+    margin-bottom: 86px;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .product-add__button {
+    width: 100%;
+    margin-bottom: 25px;
+    padding-right: 38px;
+    padding-left: 38px;
+
+    &::before {
+      top: 53px;
+      left: 50%;
+
+      width: 60px;
+      height: 60px;
+      margin-left: -30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 245px;
+    margin-top: 60px;
+  }
+
+  .product-add {
+    width: 245px;
+  }
+
+  .product-add__title {
+    padding-top: 164px;
+  }
+
+  .product-add__button {
+    &::before {
+      top: 54px;
+    }
+  }
+}

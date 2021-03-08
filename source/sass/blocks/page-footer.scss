@@ -1,0 +1,20 @@
+.page-footer--color {
+  background-color: $gray-light;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 49px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding-top: 52px;
+    padding-bottom: 62px;
+  }
+}
